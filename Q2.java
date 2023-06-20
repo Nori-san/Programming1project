@@ -22,11 +22,11 @@ public class Q2 {
 
 		int[] arrayNum = new int[size];
 		System.out.print("Enter Numbers:  ");
-
+		System.out.println();
 		do {	
 			arrayNum[i++] = input.nextInt();  // getting input from user N-times according to the "size"
 		} while (i < arrayNum.length);
-
+		System.out.println();
 		jokerCheck(arrayNum, joker);
 
 		input.close();
@@ -43,6 +43,6 @@ public class Q2 {
 		for (i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
-
+		
 	}
 }
