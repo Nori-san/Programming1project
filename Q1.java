@@ -18,7 +18,7 @@ public class Q1 {
 		do {
 			myarr[i++] = kb.nextInt();
 		} while (i < 3);
-
+		System.out.println();
 		kb.close();
 
 		combiNum(myarr);

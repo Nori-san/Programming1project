@@ -11,7 +11,7 @@ public class Q6 {
 		
 		int [] arrayNum = {9,6,4,2,3,5,7,0,1};
 		
-		System.out.println("Original Array " + Arrays.toString(arrayNum));
+		System.out.println("nums = " + Arrays.toString(arrayNum));
 		int missingNumber = findMissingNumber(arrayNum);
 		System.out.println("The missing number is: " + missingNumber);
 
