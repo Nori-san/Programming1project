@@ -12,32 +12,25 @@ public class Q2 {
 //		If the number is less than joker give the zero otherwise deduct that number until getting number less than joker and keep that number. 
 
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input Joker number: ");
+		System.out.print("Joker: ");
 		int joker = input.nextInt();
-		System.out.print("Input size: ");
+		System.out.print("Number: ");
 		int size = input.nextInt();
 		
 		int [] arrayNum = new int[size];
 		
 		for (int i = 0; i < size; i++) {
-            System.out.print("Enter Number at index " + i + ": ");
+            System.out.print("Enter Numbers:  ");
             int num = input.nextInt();
-		
-            if (num > joker) {
-            	arrayNum[i] -= joker;
-            } else {
             	while ( num >= joker) {
             		num -= joker;
             	}
             	arrayNum[i]=num;
             }
-		}
-            
-            System.out.println("Updated array:");
+		 System.out.println();
             for (int i = 0; i < size; i++) {
                 System.out.print(arrayNum[i] + " ");
             }
-            
 		input.close();
 		}
 	}

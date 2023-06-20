@@ -33,18 +33,17 @@ public class Q3 {
 				System.out.println();
 			}
 			System.out.println();
-			//Removing number in the mult Array
-		System.out.print("Input number to remove: ");
+		System.out.print("Input number to remove: "); //Removing number in the multArray
 		int num = input.nextInt();
 		for (int i = 0; i < row; i++) {  
 			for (int j = 0; j < col; j++) { 
-				if (multArray[i][j] == num) {
-					multArray[i][j] = 0;
+				if (multArray[i][j] == num) { //removing the specific number in the table
+					multArray[i][j] = 0; //replacing removed number to 0
 				}
 			}
 		}
 		System.out.println("\nUpdated Random Table:");
-		for (int i = 0; i < row; i++) {  
+		for (int i = 0; i < row; i++) {  //iterating table and prnt an updated table
 			for (int j = 0; j < col; j++) { 
 				System.out.printf("%4d", multArray[i][j]);
 			}
