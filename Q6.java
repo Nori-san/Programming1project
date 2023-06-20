@@ -19,7 +19,8 @@ public class Q6 {
 	
 	public static int findMissingNumber(int[] array) {
 		int n = array.length; 
-		 int sum = (n * (n + 1)) / 2;
+		//formula to find missing number in a sequence of array (n+1)/2
+		int sum = (n * (n + 1)) / 2;
 		int actualSum = 0;
 		for (int i = 0; i < n; i++) {
 			actualSum += array[i];
