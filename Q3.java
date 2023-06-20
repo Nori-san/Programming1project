@@ -19,17 +19,7 @@ public class Q3 {
 		System.out.print("Input Column size: ");
 		int col = input.nextInt();
 		
-		multidimensionalArray(row, col);
-		
-		System.out.print("Input number to remove: ");
-		int num = input.nextInt();
-		
-		
-		
-	
-	} 
-	
-	public static void multidimensionalArray(int row, int col) {
+		System.out.println("Original Random table:");
 		int[][] multArray = new int[row][col]; //[row][col]
 		for (int i = 0; i < row; i++) {  //i is the row of the table
 			for (int j = 0; j < col; j++) { //j is the column of the table
@@ -42,24 +32,23 @@ public class Q3 {
 				} 
 				System.out.println();
 			}
-			
-		}
-	
-	public static int[] removeElementIndex(int[] array, int specificValue) {
-		int count = 0;
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] == specificValue) {
-				count++;
+			System.out.println();
+			//Removing number in the mult Array
+		System.out.print("Input number to remove: ");
+		int num = input.nextInt();
+		for (int i = 0; i < row; i++) {  
+			for (int j = 0; j < col; j++) { 
+				if (multArray[i][j] == num) {
+					multArray[i][j] = 0;
+				}
 			}
 		}
-		int[] removeIndex = new int[array.length - count];
-		int index = 0;
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] != specificValue) {
-				removeIndex[index] = array[i];
-				index++;
+		System.out.println("\nUpdated Random Table:");
+		for (int i = 0; i < row; i++) {  
+			for (int j = 0; j < col; j++) { 
+				System.out.printf("%4d", multArray[i][j]);
 			}
+			System.out.println();
 		}
-		return removeIndex;
 	}
-	}
+}

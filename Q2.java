@@ -14,17 +14,34 @@ public class Q2 {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input Joker number: ");
 		int joker = input.nextInt();
-		System.out.print("Input number: ");
-		int number = input.nextInt();
+		System.out.print("Input size: ");
+		int size = input.nextInt();
 		
+		int [] arrayNum = new int[size];
+		
+		for (int i = 0; i < size; i++) {
+            System.out.print("Enter Number at index " + i + ": ");
+            int num = input.nextInt();
+		
+            if (num > joker) {
+            	arrayNum[i] -= joker;
+            } else {
+            	while ( num >= joker) {
+            		num -= joker;
+            	}
+            	arrayNum[i]=num;
+            }
+		}
+            
+            System.out.println("Updated array:");
+            for (int i = 0; i < size; i++) {
+                System.out.print(arrayNum[i] + " ");
+            }
+            
 		input.close();
-
-	}
-
-	public static void ArrayNum(int[] array, int joker) {
-		int n = array.length;
-		for (int i=1;i<=n;i++) {
-			if 
 		}
 	}
-}
+
+
+	
+
