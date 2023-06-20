@@ -1,9 +1,9 @@
-package TeamProject_PL1;
+package Programming1project;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Question05 {
+public class Q5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
