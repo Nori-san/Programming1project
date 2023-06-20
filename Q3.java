@@ -1,6 +1,5 @@
 package Programming1project;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q3 {
@@ -21,20 +20,46 @@ public class Q3 {
 		int col = input.nextInt();
 		
 		multidimensionalArray(row, col);
-		input.close();
+		
+		System.out.print("Input number to remove: ");
+		int num = input.nextInt();
+		
+		
+		
+	
 	} 
 	
 	public static void multidimensionalArray(int row, int col) {
 		int[][] multArray = new int[row][col]; //[row][col]
 		for (int i = 0; i < row; i++) {  //i is the row of the table
 			for (int j = 0; j < col; j++) { //j is the column of the table
-				multArray[i][j] = (int) (Math.random() * 100 +1);
+				multArray[i][j] = (int) (Math.random() * 100 +1); //generating random number from 1-100
 				}
 			}
-			for (int i = 0; i < row; i++) {
+			for (int i = 0; i < row; i++) { //iterating the multidimensional array
 				for (int j = 0; j < col; j++) {
 					System.out.printf("%4d", multArray[i][j]);
-				} System.out.println();
+				} 
+				System.out.println();
+			}
+			
+		}
+	
+	public static int[] removeElementIndex(int[] array, int specificValue) {
+		int count = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] == specificValue) {
+				count++;
 			}
 		}
+		int[] removeIndex = new int[array.length - count];
+		int index = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] != specificValue) {
+				removeIndex[index] = array[i];
+				index++;
+			}
+		}
+		return removeIndex;
+	}
 	}
