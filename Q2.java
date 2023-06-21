@@ -19,7 +19,7 @@ public class Q2 {
 		// Size of the array
 		System.out.print("Number: ");
 		size = input.nextInt();
-
+		//numbers in array input
 		int[] arrayNum = new int[size];
 		System.out.print("Enter Numbers:  ");
 		System.out.println();
@@ -34,7 +34,6 @@ public class Q2 {
 
 	public static void jokerCheck(int[] arr, int joker) {
 		int i;
-
 		for (i = 0; i < arr.length; i++) {  // compare with joker
 			while (arr[i] >= joker) {		// until joker <= value , repeat the subtraction
 				arr[i] -= joker;

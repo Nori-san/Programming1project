@@ -1,3 +1,4 @@
+
 package Programming1project;
 
 public class Q5 {
@@ -11,14 +12,13 @@ public class Q5 {
 		int i, majorNum;
 		int[] myarr1 = { 2, 2, 1, 1, 1, 2, 2 };
 
-		System.out.println("============================ ");
 		System.out.println("Printing the array ");
-		System.out.println("============================ ");
-		System.out.print("[ ");
+		System.out.print("[");
+		
 		for (i = 0; i < myarr1.length; i++) {
-			System.out.printf("%4d", myarr1[i]);
+			System.out.printf("%3d" , myarr1[i]);
 		}
-		System.out.println(" ] ");
+		System.out.println("  ]");
 		System.out.println();
 
 		majorNum = majorElement(myarr1); // Call the method to check the majority element
@@ -48,11 +48,11 @@ public class Q5 {
 				}
 			}
 
-			if (dupCnt <= 1) {
+			if (dupCnt <= 1) {		//Number of appearance in the array
 				System.out.println(arr[i] + " is counted " + numCnt + " time(s).");
 			}
 
-			if (dupCnt > arr.length / 2) {
+			if (dupCnt > arr.length / 2) {		
 				majorNum = temp;
 			}
 

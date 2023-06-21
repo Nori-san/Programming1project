@@ -21,6 +21,8 @@ public class Q4 {
 	}
 
 	public static void sortArray(int[] array) {
+				//sorting by swapping variables
+
 		int i, j;
 		for (i = 0; i < array.length; i++) {
 			for (j = i + 1; j < array.length; j++) {
@@ -32,15 +34,13 @@ public class Q4 {
 					array[j] = temp;
 				}
 			}
-		}
-
+		}		
 		System.out.print("Sorted Array : [");
 		for (i = 0; i < array.length; i++) {
 			System.out.printf("%3d", array[i]);
 		}
 		System.out.println("  ] ");
 		System.out.println();
-
 	}
 
 }
