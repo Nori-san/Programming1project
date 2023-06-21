@@ -7,10 +7,12 @@ public class Q3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-//		You are commissioned to write a Java program that will asking from user 2  integer. Call them row and col. Create the multidimensional array by that sizes. 
+//		You are commissioned to write a Java program that will asking from user 2  integer. Call them row and col. 
+//		Create the multidimensional array by that sizes. 
 //
 //		Fill the array with the random number between 1 to 100. And print it. 
-//		Now ask user which number want to disappear. Get the value and search for entire the matrix ; find the number and make it to zero and return the new array
+//		Now ask user which number want to disappear. Get the value and search for entire the matrix ; 
+//		find the number and make it to zero and return the new array
 
 		
 		Scanner input = new Scanner(System.in);
@@ -43,7 +45,7 @@ public class Q3 {
 			}
 		}
 		System.out.println("\nUpdated Random Table:");
-		for (int i = 0; i < row; i++) {  //iterating table and prnt an updated table
+		for (int i = 0; i < row; i++) {  //iterating table and print an updated table
 			for (int j = 0; j < col; j++) { 
 				System.out.printf("%4d", multArray[i][j]);
 			}

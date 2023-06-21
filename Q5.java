@@ -14,14 +14,16 @@ public class Q5 {
 		System.out.println("============================ ");
 		System.out.println("Printing the array ");
 		System.out.println("============================ ");
+		System.out.print("[ ");
 		for (i = 0; i < myarr1.length; i++) {
 			System.out.printf("%4d", myarr1[i]);
 		}
+		System.out.println(" ] ");
 		System.out.println();
 
 		majorNum = majorElement(myarr1); // Call the method to check the majority element
 		System.out.println("==========================");
-		System.out.println("Major num : " + majorNum);
+		System.out.println("Major num : " + majorNum );
 
 	}
 
