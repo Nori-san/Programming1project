@@ -17,10 +17,10 @@ public class Q4 {
 	}
 	public static void sortArray(int[] array) {
 		int n = array.length;
-		for (int i=0;i<n;i++) {
+		for (int i=0;i<n;i++) { 			//iterating the array
 			for (int j=i+1;j<n;j++) {
 				int temp =0;
-				//swapping variables
+				//sorting by swapping variables
 				if (array[i] > array[j]) {
 					temp = array[i];
 					array[i] = array[j];
