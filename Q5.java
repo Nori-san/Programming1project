@@ -1,7 +1,5 @@
 package Programming1project;
 
-import java.util.Scanner;
-
 public class Q5 {
 
 	public static void main(String[] args) {
@@ -10,20 +8,9 @@ public class Q5 {
 		// element is the element that appears more than [n / 2] times. You may assume
 		// that the majority element always exists in the array.
 
-		int i = 0, sz, majorNum;
+		int i, majorNum;
+		int[] myarr1 = { 2, 2, 1, 1, 1, 2, 2 };
 
-		Scanner kb = new Scanner(System.in);
-		System.out.println("How many numbers do you want to enter? ");
-		sz = kb.nextInt();
-
-		int[] myarr1 = new int[sz];
-		System.out.println("Please enter numbers :");
-		do {
-			myarr1[i++] = kb.nextInt();
-		} while (i < myarr1.length);
-
-		kb.close();
-//		int[] myarr2 = { 2, 2, 1, 1, 1, 2, 2 };
 		System.out.println("============================ ");
 		System.out.println("Printing the array ");
 		System.out.println("============================ ");
@@ -50,7 +37,7 @@ public class Q5 {
 					continue;
 				}
 			}
-			
+
 			for (j = i; j >= 0; j--) { // filtering duplicate of element
 				if (arr[j] == temp) {
 					dupCnt++;
@@ -66,7 +53,7 @@ public class Q5 {
 			if (dupCnt > arr.length / 2) {
 				majorNum = temp;
 			}
-			
+
 			numCnt = 1;
 			dupCnt = 0;
 		}
